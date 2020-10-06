@@ -37,11 +37,16 @@
             </div>
             <% } %>
 
-            <% if (config.aomori_busuanzi){ %>
+            <% if (theme.aomori_busuanzi){ %>
             <div class="article-busuanzi">
                 有 <span id="busuanzi_value_page_pv">N</span> 人看过
             </div>
             <% } %>
+
+            <div class="articel-wordcount">
+                共&nbsp;<span><%= wordcount(post.content) %></span>&nbsp;字
+            </div>
+
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
@@ -61,22 +66,6 @@
     <% } %>
 
     <%- partial('post/nav') %>
-
-    <section class="share">
-        <div class="share-title"><%= __('share') %></div>
-        <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=<%- post.title %> - <%- config.title %>&url=<%- post.permalink %>">
-            <box-icon type='logo' name='twitter'></box-icon>
-        </a>
-        <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=<%- post.title %> - <%- config.title %>&u=<%- post.permalink %>">
-            <box-icon name='facebook-square' type='logo' ></box-icon>
-        </a>
-        <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=<%- post.title %> - <%- config.title %>&url=<%- post.permalink %>&pic=">
-            <div class="n-icon n-icon-weibo"></div>
-        </a> -->
-    </section>
 
 </article>
 
@@ -100,6 +89,19 @@
 </section>
 <% } %>
 
-<% if (config.aomori_busuanzi){ %>
+<!-- utteranc comments -->
+<% if (page.comments && theme.utteranc.enabled ){ %>
+<section class="comments">
+    <script src="https://utteranc.es/client.js"
+            repo='<%= theme.utteranc.repo %>'
+            issue-term='<%= theme.utteranc.issue_term %>'
+            theme='<%= theme.utteranc.theme %>'
+            crossorigin='<%= theme.utteranc.crossorigin %>'
+            async>
+    </script>
+</section>
+<% } %>
+
+<% if (theme.aomori_busuanzi){ %>
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% } %>

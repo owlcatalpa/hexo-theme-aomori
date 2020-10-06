@@ -74,26 +74,26 @@
 }
 
 .post-inner-html h1 {
-	font-size: 22px;
-	line-height: 48px;
+	font-size: 1.6em;
+	line-height: 3.42em;
 	text-align: left
 }
 
 .post-inner-html h2 {
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 1.3em;
+	line-height: 1.85em;
 	text-align: left
 }
 
 .post-inner-html h3 {
-	font-size: 16px;
-	line-height: 26px;
+	font-size: 1.14em;
+	line-height: 1.85em;
 	text-align: left
 }
 
 .post-inner-html h4,.post-inner-html h5,.post-inner-html h6 {
-	line-height: 26px;
-	font-size: 14px;
+	line-height: 1.85em;
+	font-size: 1em;
 	text-align: left
 }
 
@@ -282,6 +282,9 @@
 }
 
 .post-inner-html img,.post-inner-html video {
+	text-align: center; 
+	margin: 0 auto;
+	display:block;
 	max-width: 100%;
 	border: 0
 }

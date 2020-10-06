@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-inner">
         <div class="footer-info">
-            <span>&copy; 2013 - <%= date(new Date(), 'YYYY') %> <%= config.title %></span>
+            <span>&copy; 2019 - <%= date(new Date(), 'YYYY') %> <%= config.title %> @ <%=config.author %></span>
         </div>
         <div class="footer-powered">
             <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a> Theme · Powered By Hexo
@@ -15,24 +15,6 @@
 
 <%- js('dist/build.js?' + theme.version) %>
 <%- js('dist/custom.js?' + theme.version) %>
-
-<% if (config.aomori_baidu_sitepush) { %>
-<!-- 百度链接提交 -->
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-<% } %>
 
 <% if (config.aomori_google_analytics) { %>
 <!-- Google Analytics-->

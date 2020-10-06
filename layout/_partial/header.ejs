@@ -1,9 +1,9 @@
 <div class="container">
     <header class="header">
         <div class="header-type">
-            <% if (config.aomori_logo){ %>
+            <% if (theme.aomori_logo){ %>
             <div class="avatar avatar-sm">
-                <img src="<%= config.aomori_logo %>" alt="<%= config.author %>">
+                <img src="<%= theme.aomori_logo %>" alt="<%= config.author %>">
             </div>
             <% } %>
             <a href="/"><%= config.title %></a>
@@ -13,8 +13,8 @@
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">
-                <% for (var i in config.aomori_menu){ %>
-                <a href="<%- url_for(config.aomori_menu[i]) %>"><%= i %></a>
+                <% for (var i in theme.aomori_menu){ %>
+                <a href="<%- url_for(theme.aomori_menu[i]) %>"><%= i %></a>
                 <% } %>
             </div>
             <div class="header-menu-social">
@@ -37,8 +37,8 @@
                     <i class="icon icon-cross"></i>
                 </div>
                 <div class="header-menu-mobile-menu-list">
-                    <% for (var i in config.aomori_menu){ %>
-                    <a href="<%- url_for(config.aomori_menu[i]) %>"><%= i %></a>
+                    <% for (var i in theme.aomori_menu){ %>
+                    <a href="<%- url_for(theme.aomori_menu[i]) %>"><%= i %></a>
                     <% } %>
                 </div>
             </div>

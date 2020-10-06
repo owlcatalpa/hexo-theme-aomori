@@ -1,6 +1,8 @@
 // 处理移动端响应
 @media screen and(max-width: 600px) {
     .header {
+        margin: 0 20px;
+        
         .header-menu {
             display: none;
         }
@@ -8,6 +10,14 @@
         .header-menu-mobile {
             display: flex;
         }
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .sidebar {
+        margin: 20px 0;
     }
 
     .index {
