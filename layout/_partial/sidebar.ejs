@@ -1,4 +1,7 @@
-
-<% theme.aomori_widgets.forEach(function(widget){ %>
-  <%- partial('_widget/' + widget) %>
-<% }) %>
+<div class="widget">
+    <% theme.aomori_widgets.forEach(function(widget){ %> <%- partial('_widget/'
+    + widget) %> <% }) %>
+</div>
+<div id="backtop">
+    <i class="icon icon-arrow-up"></i>
+</div>

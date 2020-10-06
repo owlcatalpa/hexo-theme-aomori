@@ -1,24 +1,30 @@
 version: 1.5.2
 language: cn
 
+# 原设置
 aomori_logo: /images/avatar.jpg
+
 aomori_menu:
     主页: /
     归档: /archives
     项目: /projects
     关于: /about
+
 aomori_widgets:
     - toc # Article navigation
     - category # Article classification
     - tag # Article tags
     - recent_posts # latest articles
     - archive # Article Archive
+
 aomori_copyright: false # or false
 
 aomori_busuanzi: false
+
 aomori_social:
     - icon: github
       url: https://github.com/owlzou
+
 
 # utteranc
 utteranc:
